@@ -189,7 +189,7 @@ body {
   height: 2px;
   margin-bottom: 20px;
   background: rgb(85,0,227);
-  background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+  background: linear-gradient(90deg, rgba(9,2,71,22) 0%, rgba(20,36,192,43) 100%);
 }
 
 .section-heading h2 {
@@ -1989,3 +1989,4 @@ body {
   }
 
 }
+
