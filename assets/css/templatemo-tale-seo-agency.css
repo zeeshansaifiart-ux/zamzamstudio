@@ -835,7 +835,7 @@ Banner Style
   right: 0;
   position: absolute;
   width: 700px;
-  height: 700spx;
+  height: 700px;
   z-index: -1;
 }
 
@@ -848,6 +848,14 @@ Banner Style
   height: 655px;
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .main-banner::after,
+  .main-banner::before {
+    display: none;
+  }
+}
+
 
 .main-banner h6 {
   font-size: 20px;
@@ -1069,6 +1077,7 @@ Infos Style
   background-position: center center;
   padding: 120px 0px;
   margin-top: 120px;
+  display: none;
 }
 
 .infos .main-content {
@@ -1260,7 +1269,7 @@ Contact Style
 .contact-us-content .more-info {
   text-align: center;
   background: rgb(85,0,227);
-  background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+  background: linear-gradient(90deg, rgba(9,2,71,22) 0%, rgba(20,36,192,43) 100%);
   border-radius: 0px 0px 23px 23px;
   padding: 45px 30px 15px 30px;
 }
@@ -2000,5 +2009,38 @@ body {
     background-color: rgba(250, 250, 250, 0.95);
     padding: 60px;
     border-radius: 23px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main-banner {
+    padding: 60px 0 60px 0;   /* heavy padding hatao */
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  /* MOBILE BANNER IMAGE */
+  .main-banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    margin: 0 auto 25px;
+
+    background-image: url("../images/banner1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .main-banner h4 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .main-banner p {
+    padding-right: 0;
   }
 }
